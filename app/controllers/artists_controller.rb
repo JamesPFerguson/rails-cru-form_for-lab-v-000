@@ -10,7 +10,7 @@ class ArtistsController < ApplicationController
   end
 
   def edit
-    2_artist
+    s_artist
   end
 
   def update
