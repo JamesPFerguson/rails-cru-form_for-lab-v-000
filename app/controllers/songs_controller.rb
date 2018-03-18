@@ -30,7 +30,7 @@ class SongsController < ApplicationController
     end
 
     def s_params
-      params.require(:song).permit(:name)
+      params.require(:song).permit(:name, :genre, :artist)
     end
 
     def s_redirect
