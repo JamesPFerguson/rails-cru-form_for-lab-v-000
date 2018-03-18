@@ -33,7 +33,7 @@ private
     end
 
     def a_params
-      params.require(:name, :bio)
+      params.require(:name).permit(:bio)
     end
 
     def a_redirect
