@@ -30,7 +30,7 @@ class GenresController < ApplicationController
     end
 
     def g_params
-      params.require(:name)
+      params.require(:genre).permit(:name)
     end
 
     def g_redirect
