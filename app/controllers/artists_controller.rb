@@ -28,16 +28,16 @@ class ArtistsController < ApplicationController
   end
 
 private
-  def s_artist
-    @artist = Artist.find(params[:id])
-  end
+    def s_artist
+      @artist = Artist.find(params[:id])
+    end
 
-  def a_params
-    params.require(:name, :bio)
-  end
+    def a_params
+      params.require(:name, :bio)
+    end
 
-  def a_redirect
-      redirect_to artist_path(@artist)
-  end
+    def a_redirect
+        redirect_to artist_path(@artist)
+    end
 
 end
