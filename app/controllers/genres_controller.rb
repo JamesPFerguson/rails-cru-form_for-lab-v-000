@@ -5,9 +5,9 @@ class GenresController < ApplicationController
   end
 
   def create
-    @genre = Genre.new(a_params)
+    @genre = Genre.new(g_params)
     @genre.save
-    a_redirect
+    g_redirect
   end
 
   def edit
@@ -16,8 +16,8 @@ class GenresController < ApplicationController
 
   def update
     s_genre
-    @genre.update(a_params)
-    a_redirect
+    @genre.update(g_params)
+    g_redirect
   end
 
   def show
