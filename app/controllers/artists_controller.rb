@@ -33,7 +33,7 @@ private
     end
 
     def a_params
-      params.require(:name).permit(:bio)
+      params.require(:artist).permit(:bio, :name)
     end
 
     def a_redirect
