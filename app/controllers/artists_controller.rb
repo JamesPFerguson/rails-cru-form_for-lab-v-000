@@ -13,10 +13,12 @@ class ArtistsController < ApplicationController
   end
 
   def update
+    s_artist
+    @artist.update(a_params)
   end
 
   def show
-
+    s_artist
   end
 
 
