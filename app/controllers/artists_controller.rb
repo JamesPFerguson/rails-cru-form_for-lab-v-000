@@ -4,9 +4,11 @@ class ArtistsController < ApplicationController
   end
 
   def new
+    @artist = Artist.new
   end
 
   def create
+    @artist = Artist.create(a_params)
   end
 
   def edit
