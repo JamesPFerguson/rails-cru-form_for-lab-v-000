@@ -16,7 +16,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    
+
   end
 
 
@@ -27,4 +27,5 @@ class ArtistsController < ApplicationController
   def a_params
     params.require(:name, :bio)
   end
+
 end
